@@ -17,6 +17,7 @@ After each command, the exit code can be found in the `$?` variable. No error if
 
 ## Quick Start
 
+- Get latest release of ghue CLI on https://github.com/yesnault/ghue/releases
 - Get IP of your bridge. See http://www.developers.meethue.com/documentation/getting-started to check how to discover your bridge's IP.
 - Press button on your bridge
 - If your IP is `192.168.0.17`, execute `./ghue config create --ip 192.168.0.17 --save`
