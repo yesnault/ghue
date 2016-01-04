@@ -10,6 +10,7 @@ for GOOS in windows darwin linux ; do
         echo "Building ${architecture} ${path}"
         export GOOS=$GOOS
         export GOARCH=$GOARCH
+        go get ../...
         go build -ldflags "-X ${PROJECT_PATH}/${PROJECT_NAME}/cli/update.architecture=${architecture}" -o=bin/${NAME}-${architecture}
     done
 done
