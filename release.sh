@@ -38,8 +38,8 @@ then
         echo "Error: version mismatch '$current_tag' != 'v$version'"
     fi
 else
-    sed -i.bak "s/const VERSION =.*/const VERSION = \"$version\"/g" version/version.go
-    rm -f version/version.go.bak
+    sed -i.bak "s/const VERSION =.*/const VERSION = \"$version\"/g" sdk/common/version.go
+    rm -f sdk/common/version.go.bak
     git commit -am "[auto] bump version to v$version"
     git tag -s "v$version"
 fi
