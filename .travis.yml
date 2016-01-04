@@ -1,0 +1,31 @@
+language: go
+go:
+- 1.5.2
+env:
+  global:
+  - GO15VENDOREXPERIMENT=1
+  - PROJECT_NAME="ghue"
+  - PROJECT_PATH="github.com/yesnault"
+
+install: true
+
+script: cd cli && chmod +x package.sh && ./package.sh
+
+before_deploy:
+  - gem install mime-types -v 2.6.2
+
+deploy:
+  provider: releases
+  api_key:
+    secure: cytcRD8HV4ggVJIMOje3rKDJsL7uiy3cZHQiQFEoP+63TGa1fnRO3MZIpBbE/xrOO33jNubZM1w1mhm6eZk0vjSSfNGCdacidZXYABiXvZU/Y15JGceY4jB0KeQbbcz4ImSElEODly5dvzJtFJnTMWzL4zb0ATEhXoxGcKeWNLVkVIQ/T9xFQ2/KMuZi++8C6DX0oEDKfAtL2bhpHdvkGzZxW39LcPB3ljTHkGgb7J3UQVN/BdXMxrcmiLLhX5WjqeQ0hyfrg21eNUNr4CdIx4EwyWdhzNSanUe9Cdf97ZCfWjlxy6Et4AH90swyhpdt4brgqUlEjQJr7tYWy/xs5x076j3ueRD4CkMsezQ6Qv2/c+038FMDlRrVRbbjz8VwUlh68O/RrwwlZcQbTS7iZK9jxsEZjScc60SNO0bEfvF2821rgJN3LLmNrYI4hZtLKyR88S7g8/b95KVtU9CwXZnzL38EYV79oAfMMqFBdNoZKWj/Oj7EzPE1HlHYCNN6VvvIvDC85hz8859um4Plsbhg5+lb7mCjUpna/vApC5HYG0h1rCmLhMiLEQmLyErK0HvhnMjb9yrRr1rqTr5zaetxSgJr1WyVBXoKbSVM9lOgHq0XrcQm8pl+tyWcavd8lSJX+njrKDrisR8LSTUWHHkjaXWUVAUGt6KJK3m3feM=
+  file:
+    - cli/bin/ghue-darwin-386
+    - cli/bin/ghue-darwin-amd64
+    - cli/bin/ghue-linux-386
+    - cli/bin/ghue-linux-amd64
+    - cli/bin/ghue-linux-arm
+    - cli/bin/ghue-windows-386
+    - cli/bin/ghue-windows-amd64
+  on:
+    tags: true
+    repo: yesnault/ghue
