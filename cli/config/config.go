@@ -11,6 +11,7 @@ import (
 
 func init() {
 	Cmd.AddCommand(cmdConfigRegister)
+	Cmd.AddCommand(cmdConfigGet)
 }
 
 // Cmd config
