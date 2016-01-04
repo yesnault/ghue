@@ -7,7 +7,7 @@ for GOOS in windows darwin linux ; do
           continue;
         fi;
         architecture="${GOOS}-${GOARCH}"
-        echo "Building ${architecture} ${path}"
+        echo "Building ${architecture} to bin/${NAME}-${architecture}"
         export GOOS=$GOOS
         export GOARCH=$GOARCH
         go get ../...

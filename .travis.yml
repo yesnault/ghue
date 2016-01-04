@@ -9,7 +9,7 @@ env:
 
 install: true
 
-script: cd cli && chmod +x package.sh && ./package.sh
+script: cd cli && chmod +x package.sh && ./package.sh && cd ../
 
 before_deploy:
   - gem install mime-types -v 2.6.2
