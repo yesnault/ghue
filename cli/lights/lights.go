@@ -5,6 +5,7 @@ import "github.com/spf13/cobra"
 func init() {
 	Cmd.AddCommand(cmdLightsAll)
 	Cmd.AddCommand(cmdLightsState)
+	Cmd.AddCommand(cmdLightsGet)
 }
 
 // Cmd lights

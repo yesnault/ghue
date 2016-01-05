@@ -13,13 +13,14 @@ import (
 
 // Light struct
 type Light struct {
-	Manufacturername string `json:"manufacturername"`
-	Modelid          string `json:"modelid"`
-	Name             string `json:"name"`
-	State            *State `json:"state"`
-	Swversion        string `json:"swversion"`
-	Type             string `json:"type"`
-	Uniqueid         string `json:"uniqueid"`
+	Manufacturername string        `json:"manufacturername"`
+	Modelid          string        `json:"modelid"`
+	Name             string        `json:"name"`
+	State            *State        `json:"state"`
+	Swversion        string        `json:"swversion"`
+	Type             string        `json:"type"`
+	Uniqueid         string        `json:"uniqueid"`
+	Pointsymbol      []interface{} `json:"pointsymbol"`
 }
 
 // GetAllLights GET on /api/<username>/lights

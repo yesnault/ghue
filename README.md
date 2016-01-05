@@ -52,7 +52,7 @@ Flags:
  - [X] Get all lights
  - [ ] Get new lights
  - [ ] Search for new lights
- - [ ] Get lights attributes and state
+ - [X] Get lights attributes and state
  - [ ] Set lights attributes (rename)
  - [X] Set light state
  - [ ] Delete Light
