@@ -64,24 +64,24 @@ Flags:
  - [ ] Set group state
  - [ ] Delete group
 - [ ] Schedules
- - [ ] Get all schedules
+ - [X] Get all schedules
  - [ ] Create schedule
- - [ ] Get schedule attributes
+ - [X] Get schedule attributes
  - [ ] Set schedule attributes
  - [ ] Delete schedule
 - [ ] Scenes
- - [ ] Get all scenes
+ - [X] Get all scenes
  - [ ] Create scene
  - [ ] Modify scene
  - [ ] Recall scene
  - [ ] Delete scene
- - [ ] Get scene
+ - [X] Get scene
 - [ ] Sensors
- - [ ] Get all sensors
+ - [X] Get all sensors
  - [ ] Create sensor
  - [ ] Find new sensors
  - [ ] Get new sensors
- - [ ] Get sensor
+ - [X] Get sensor
  - [ ] Update sensor
  - [ ] Delete sensor
  - [ ] Change sensor config

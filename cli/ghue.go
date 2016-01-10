@@ -9,7 +9,9 @@ import (
 	"github.com/yesnault/ghue/cli/groups"
 	"github.com/yesnault/ghue/cli/internal"
 	"github.com/yesnault/ghue/cli/lights"
+	"github.com/yesnault/ghue/cli/scenes"
 	"github.com/yesnault/ghue/cli/schedules"
+	"github.com/yesnault/ghue/cli/sensors"
 	"github.com/yesnault/ghue/cli/update"
 	"github.com/yesnault/ghue/cli/version"
 )
@@ -38,6 +40,8 @@ func addCommands() {
 	rootCmd.AddCommand(lights.Cmd)
 	rootCmd.AddCommand(groups.Cmd)
 	rootCmd.AddCommand(schedules.Cmd)
+	rootCmd.AddCommand(sensors.Cmd)
+	rootCmd.AddCommand(scenes.Cmd)
 	rootCmd.AddCommand(update.Cmd)
 	rootCmd.AddCommand(version.Cmd)
 }
