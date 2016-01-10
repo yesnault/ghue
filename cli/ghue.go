@@ -6,6 +6,7 @@ import (
 
 	"github.com/spf13/cobra"
 	"github.com/yesnault/ghue/cli/config"
+	"github.com/yesnault/ghue/cli/groups"
 	"github.com/yesnault/ghue/cli/internal"
 	"github.com/yesnault/ghue/cli/lights"
 	"github.com/yesnault/ghue/cli/update"
@@ -34,6 +35,7 @@ func main() {
 func addCommands() {
 	rootCmd.AddCommand(config.Cmd)
 	rootCmd.AddCommand(lights.Cmd)
+	rootCmd.AddCommand(groups.Cmd)
 	rootCmd.AddCommand(update.Cmd)
 	rootCmd.AddCommand(version.Cmd)
 }

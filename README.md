@@ -57,9 +57,9 @@ Flags:
  - [X] Set light state
  - [ ] Delete Light
 - [ ] Groups
- - [ ] Get all groups
+ - [X] Get all groups
  - [ ] Create group
- - [ ] Get group attributes
+ - [X] Get group attributes
  - [ ] Set group attributes
  - [ ] Set group state
  - [ ] Delete group
