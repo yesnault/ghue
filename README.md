@@ -1,12 +1,8 @@
 [![Build Status](https://travis-ci.org/yesnault/ghue.svg?branch=master)](https://travis-ci.org/yesnault/ghue)
 [![GoDoc](https://godoc.org/github.com/yesnault/ghue?status.svg)](https://godoc.org/github.com/yesnault/ghue)
 
-
-# Alpha Version, WORK IN PROGRESS
-
 # Description
 Golang Hue SDK & Command Line Interface
-
 
 # Usage
 
@@ -86,8 +82,8 @@ Flags:
  - [ ] Delete sensor
  - [ ] Change sensor config
 - [ ] Rules
- - [ ] Get all rules
- - [ ] Get rule
+ - [X] Get all rules
+ - [X] Get rule
  - [ ] Create rule
  - [ ] Update rule
  - [ ] Delete rule
@@ -97,8 +93,8 @@ Flags:
  - [ ] Modify configuration
  - [ ] Delete user from whitelist
  - [ ] Get full state (datastore)
-- [ ] Info
- - [ ] Get all timezones
+- [X] Info
+ - [X] Get all timezones
 
 # Hacking
 
