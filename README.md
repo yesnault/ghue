@@ -33,12 +33,19 @@ Usage:
 Available Commands:
   config      Config commands: ghue config --help
   lights      Lights commands: ghue lights --help
+  groups      Groups commands: ghue groups --help
+  schedules   Schedules commands: ghue schedules --help
+  sensors     Sensors commands: ghue sensors --help
+  scenes      Scenes commands: ghue scenes --help
+  info        Info commands: ghue info --help
+  rules       Rules commands: ghue rules --help
   update      Update ghue to the latest release version: ghue update
   version     Display Version of ghue: ghue version
 
 Flags:
   -c, --configFile string   configuration file, default is /Users/yvonnickesnault/.ghue/config.json (default "/Users/yvonnickesnault/.ghue/config.json")
   -f, --format string       choose format output. One of 'json', 'yaml' and 'pretty' (default "pretty")
+  -h, --help                help for ghue
   -v, --verbose             verbose output
 ```
 
