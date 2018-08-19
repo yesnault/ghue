@@ -1,6 +1,7 @@
 package update
 
 import (
+	"context"
 	"fmt"
 	"net/http"
 	"os"
@@ -28,7 +29,7 @@ var Cmd = &cobra.Command{
 
 func getURLArtifactFromGithub(architecture string) string {
 	client := github.NewClient(nil)
-	release, resp, err := client.Repositories.GetLatestRelease("yesnault", "ghue")
+	release, resp, err := client.Repositories.GetLatestRelease(context.Background(), "yesnault", "ghue")
 	if err != nil {
 		internal.Exit("Repositories.GetLatestRelease returned error: %v\n%v", err, resp.Body)
 		os.Exit(1)

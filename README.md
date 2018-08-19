@@ -105,15 +105,10 @@ Flags:
 
 # Hacking
 
-Ghue is written in Go 1.5, using the experimental vendoring
-mechanism introduced in this version. Make sure you are using at least
-version 1.5.
-
 ```bash
-mkdir -p $GOPATH/src/github.com/yesnault
-cd $GOPATH/src/github.com/yesnault
+mkdir -p $(go env GOPATH)/src/github.com/yesnault
+cd $(go env GOPATH)/src/github.com/yesnault
 git clone git@github.com:yesnault/ghue.git
-cd $GOPATH/src/github.com/yesnault/ghue/cli
-export GO15VENDOREXPERIMENT=1
+cd $(go env GOPATH)/src/github.com/yesnault/ghue/cli
 go build && ./cli -h
 ```
